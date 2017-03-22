@@ -1,0 +1,62 @@
+mixin footer()
+	.footer
+		.container
+			.columns
+				-
+					var lists = [
+						{
+							"title": "Партнерам",
+							"items": [
+								"Поставщики",
+								"Строительство и эксплуатация",
+								"Аутстаффинг",
+								"Франчайзинг",
+								"Субаренда"
+							]
+						},
+						{
+							"title": "Карьера",
+							"items": [
+								"Работа для студентов",
+								"Истории успеха",
+								"Работа в магазине",
+								"Работа в офисе",
+								"Мероприятия",
+								"HR обучение",
+								"Работа в логистике"
+							]
+						},
+						{
+							"title": "Покупателям",
+							"items": [
+								"О Компании",
+								"Акции",
+								"Магазины",
+								"Новости",
+								"Товары",
+								"Рецепты"
+							]
+						},
+						{
+							"title": "Обратная связь",
+							"items": [
+								"Напишите нам",
+								"Закажите звонок"
+							]
+						}
+					]
+				each list in lists
+					.columns__item-1.footer-list.footer__list
+						.footer-list__title!= list.title
+						.footer-list__items
+							each val in list.items
+								a(href='#').footer-list__link!= val
+				.columns__item-2.footer__address
+					.footer__logo
+					p
+						|Головной офис: <br>
+						|Адрес: 109029, Москва, Средняя Калитниковская ул., д. 28, стр. 4. Телефон: (495) 662-88-88
+
+	script(src='js/jquery-3.0.0.min.js')
+	script(src='js/slick.min.js')
+	script(src='js/script.js')

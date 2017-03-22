@@ -1,0 +1,27 @@
+//plugins
+@import "plugins/normalize";
+@import "plugins/slick";
+
+//base
+@import 'components/fonts';
+@import 'components/general';
+@import 'components/sprite';
+@import 'components/columns';
+@import 'components/typography';
+@import 'components/btn';
+@import 'components/slick-dots';
+
+//custom
+@import 'components/header';
+@import 'components/nav';
+@import 'components/logo';
+@import 'components/menu';
+@import 'components/products';
+@import 'components/share';
+@import 'components/recipes';
+@import 'components/recipe';
+@import 'components/trademarks';
+@import 'components/shops';
+@import 'components/loyalty';
+@import 'components/footer';
+@import 'components/footer-list';

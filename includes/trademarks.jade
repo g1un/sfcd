@@ -1,0 +1,9 @@
+mixin trademarks()
+	.trademarks
+		.container
+			#trademarks.columns.trademarks__list.js-slider(data-slides='6')
+				-var i = 0
+				while i < 6
+					.columns__item-1.trademarks__item.js-slider-item(class='#{i == "5" ? "_number" : ""}')
+						a(href='#').trademarks__link #{i == "5" ? "+456" : ""}
+					-i++

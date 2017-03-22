@@ -1,0 +1,16 @@
+.menu {
+
+	&__list {
+		font-size: 0;
+	}
+
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 51px;
+	}
+
+	&__link {
+		@extend %header-down-text;
+	}
+}

@@ -1,0 +1,42 @@
+include share
+
+mixin products()
+	.products
+		#products.products__slider.js-slider
+			-
+				var list = [
+					{
+						"date": "c 30 июня по 6 июля 2015 года",
+						"title": "Окорочка <br>куриные <br>охлажденные",
+						"subtitle": "1 кг",
+						"full": true,
+						"price": "129 <sup>00</sup>",
+						"priceOld": "189 <sup>50</sup>",
+						"discount": "-20%"
+					},
+					{
+						"date": "c 30 июня по 6 июля 2015 года",
+						"title": "Неделя японской <br>кухни",
+						"subtitle": "На этой неделе скидка на все ингридиенты <br> для рецептов японской кухни!",
+						"discount": "-30%"
+					}
+				]
+			-var i = 0
+			while i < 5
+				-var j = i % 2
+				product.products__item.js-slider-item
+					.container.products__main(style="background-image: url(img/product-#{j + 1}.jpg)")
+						.products__date!= list[j].date
+						.products__title!= list[j].title
+						.products__subtitle!= list[j].subtitle
+					.container.products__footer
+						+share().products__share
+						if list[j].full
+							.products__info._full
+								.price!= list[j].price
+								.old-price!= list[j].priceOld
+								.discount!= list[j].discount
+						else
+							.products__info
+								.discount!= list[j].discount
+				-i++

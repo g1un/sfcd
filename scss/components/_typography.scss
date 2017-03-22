@@ -1,0 +1,39 @@
+%header-up-text {
+	@include font-an-med();
+	font-size: 16px;
+	line-height: 1.2em;
+	color: $vivid-tangerine;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+%header-down-text {
+	@include font-an-demi();
+	font-size: 20px;
+	line-height: 1.2em;
+	color: #fff;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+%products-text {
+	@include font-pts-reg();
+	font-size: 20px;
+	line-height: 1.2em;
+	color: #000;
+}
+
+%price-text {
+	@include font-an-demi();
+	line-height: 1em;
+	color: #fff;
+
+	sup {
+		@include font-an-bold();
+		font-size: 60%;
+	}
+}

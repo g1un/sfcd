@@ -1,0 +1,133 @@
+.recipe {
+	display: block;
+	min-height: 440px;
+	padding: 0 22px 60px;
+	box-sizing: border-box;
+	border-radius: 7px;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,.11);
+	text-decoration: none;
+	position: relative;
+	
+	&:hover {
+		
+		.recipe {
+			
+			&__action {
+				border-color: $alizarin-crimson;
+				background: $alizarin-crimson;
+				color: #fff;
+			}
+
+			&__bg {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	&__image {
+		height: 220px;
+		overflow: hidden;
+		margin: 0 -22px 20px;
+		border-radius: 7px 7px 0 0;
+	}
+
+	&__bg {
+		height: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		transition: transform .25s;
+	}
+
+	&__price {
+		float: right;
+		margin-top: -80px;
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		background: $chateau-green;
+		@extend %price-text;
+		font-size: 24px;
+		line-height: 80px;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__type {
+		margin-bottom: 10px;
+		@include font-an-reg();
+		font-size: 16px;
+		line-height: 2em;
+		color: rgba(0,0,0,.4);
+
+		&:before {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 9px;
+		}
+
+		&._vegetarian {
+
+			&:before {
+				@include sprite($vegetarian);
+			}
+		}
+
+		&._complex {
+
+			&:before {
+				@include sprite($complex);
+			}
+		}
+
+		&._breakfast {
+
+			&:before {
+				@include sprite($breakfast);
+			}
+		}
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		@include font-an-demi();
+		font-size: 24px;
+		line-height: 1.2em;
+		color: #000;
+	}
+
+	&__time {
+		padding-left: 22px;
+		@include font-an-reg();
+		font-size: 18px;
+		line-height: 1.2em;
+		color: rgba(0,0,0,.4);
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			margin-top: -$time-height / 2;
+			left: 0;
+			@include sprite($time);
+		}
+	}
+	
+	&__action {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border-top: 1px solid #f4f5f5;
+		border-radius: 0 0 7px 7px;
+		@include font-an-demi();
+		font-size: 18px;
+		line-height: 60px;
+		color: $alizarin-crimson;
+		text-align: center;
+		transition: all .25s;
+	}
+}

@@ -1,0 +1,14 @@
+.columns {
+	margin: 0 -27px;
+	@extend .clearfix;
+
+	@for $i from 1 through 6 {
+
+		&__item-#{$i} {
+			float: left;
+			width: 1 / 6 * $i * 100%;
+			padding: 0 27px;
+			box-sizing: border-box;
+		}
+	}
+}

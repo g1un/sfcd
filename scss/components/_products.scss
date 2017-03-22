@@ -1,0 +1,118 @@
+.products {
+	margin-bottom: 45px;
+
+	&__main {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 500px;
+		box-sizing: border-box;
+		padding-top: 55px;
+		padding-bottom: 55px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	&__date {
+		@extend %products-text;
+	}
+
+	&__title {
+		@include font-an-bold();
+		font-size: 50px;
+		line-height: 1.2em;
+		color: #000;
+	}
+
+	&__subtitle {
+		@extend %products-text;
+	}
+
+	&__footer {
+		height: 60px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__info {
+		align-self: flex-end;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		background: $chateau-green;
+
+		.discount {
+			@include font-an-demi();
+			font-size: 55px;
+			line-height: 1em;
+			color: #fff;
+			text-align: center;
+		}
+
+		&._full {
+			display: block;
+			position: relative;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				@include sprite($price-bg);
+			}
+
+			.price {
+				@include font-an-demi();
+				font-size: 54px;
+				line-height: 1em;
+				color: #fff;
+				position: relative;
+
+				sup {
+					@include font-an-bold();
+					font-size: 60%;
+				}
+			}
+
+			.old-price {
+				display: inline-block;
+				vertical-align: top;
+				@include font-an-demi();
+				font-size: 27px;
+				line-height: 1em;
+				color: $jewel;
+				position: relative;
+
+				&:after {
+					content: '';
+					position: absolute;
+					top: 50%;
+					margin-top: -1px;
+					left: 0;
+					right: 0;
+					height: 2px;
+					background: #fff;
+					transform: rotate(-5deg);
+				}
+
+				sup {
+					@include font-an-bold();
+					font-size: 60%;
+				}
+			}
+
+			.discount {
+				@include font-an-demi();
+				font-size: 27px;
+				line-height: 1em;
+				color: #fff;
+				position: relative;
+			}
+		}
+	}
+}

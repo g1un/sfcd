@@ -1,0 +1,26 @@
+mixin header()
+	.header
+		.header__up
+			.container
+				.columns
+					.columns__item-1.header__city
+						a(href='#') Омск
+					nav.columns__item-4.nav.header__nav
+						ul.nav__list
+							each val in ["О компании", "Акции", "Магазины", "Новости", "Товары", "Напишите нам"]
+								li.nav__item
+									a(href='#').nav__link!= val
+					.columns__item-1.header__tel
+						a(href='tel:8-800-555-55-05') 8-800-555-55-05
+		.header__down
+			.container
+				.columns
+					.columns__item-1.logo.header__logo
+						img(src='../img/svg/logo.svg')
+					ul.columns__item-4.menu.header__menu
+						each val in ["Покупателям", "Партнерам", "Карьера"]
+							li.menu__item
+								a(href='#').menu__link!= val
+					.columns__item-1.header__buttons
+						a(href='#').header__search
+						a(href='#').btn.header__enter Войти

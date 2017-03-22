@@ -1,0 +1,244 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$breakfast-name: 'breakfast';
+$breakfast-x: 0px;
+$breakfast-y: 199px;
+$breakfast-offset-x: 0px;
+$breakfast-offset-y: -199px;
+$breakfast-width: 20px;
+$breakfast-height: 30px;
+$breakfast-total-width: 292px;
+$breakfast-total-height: 229px;
+$breakfast-image: 'sprite.png';
+$breakfast: (0px, 199px, 0px, -199px, 20px, 30px, 292px, 229px, 'sprite.png', 'breakfast', );
+$city-name: 'city';
+$city-x: 20px;
+$city-y: 199px;
+$city-offset-x: -20px;
+$city-offset-y: -199px;
+$city-width: 12px;
+$city-height: 16px;
+$city-total-width: 292px;
+$city-total-height: 229px;
+$city-image: 'sprite.png';
+$city: (20px, 199px, -20px, -199px, 12px, 16px, 292px, 229px, 'sprite.png', 'city', );
+$complex-name: 'complex';
+$complex-x: 196px;
+$complex-y: 128px;
+$complex-offset-x: -196px;
+$complex-offset-y: -128px;
+$complex-width: 33px;
+$complex-height: 22px;
+$complex-total-width: 292px;
+$complex-total-height: 229px;
+$complex-image: 'sprite.png';
+$complex: (196px, 128px, -196px, -128px, 33px, 22px, 292px, 229px, 'sprite.png', 'complex', );
+$logo-grey-name: 'logo-grey';
+$logo-grey-x: 0px;
+$logo-grey-y: 171px;
+$logo-grey-offset-x: 0px;
+$logo-grey-offset-y: -171px;
+$logo-grey-width: 148px;
+$logo-grey-height: 28px;
+$logo-grey-total-width: 292px;
+$logo-grey-total-height: 229px;
+$logo-grey-image: 'sprite.png';
+$logo-grey: (0px, 171px, 0px, -171px, 148px, 28px, 292px, 229px, 'sprite.png', 'logo-grey', );
+$loupe-name: 'loupe';
+$loupe-x: 229px;
+$loupe-y: 128px;
+$loupe-offset-x: -229px;
+$loupe-offset-y: -128px;
+$loupe-width: 21px;
+$loupe-height: 20px;
+$loupe-total-width: 292px;
+$loupe-total-height: 229px;
+$loupe-image: 'sprite.png';
+$loupe: (229px, 128px, -229px, -128px, 21px, 20px, 292px, 229px, 'sprite.png', 'loupe', );
+$mailru-hover-name: 'mailru-hover';
+$mailru-hover-x: 250px;
+$mailru-hover-y: 128px;
+$mailru-hover-offset-x: -250px;
+$mailru-hover-offset-y: -128px;
+$mailru-hover-width: 20px;
+$mailru-hover-height: 20px;
+$mailru-hover-total-width: 292px;
+$mailru-hover-total-height: 229px;
+$mailru-hover-image: 'sprite.png';
+$mailru-hover: (250px, 128px, -250px, -128px, 20px, 20px, 292px, 229px, 'sprite.png', 'mailru-hover', );
+$mailru-name: 'mailru';
+$mailru-x: 270px;
+$mailru-y: 128px;
+$mailru-offset-x: -270px;
+$mailru-offset-y: -128px;
+$mailru-width: 20px;
+$mailru-height: 20px;
+$mailru-total-width: 292px;
+$mailru-total-height: 229px;
+$mailru-image: 'sprite.png';
+$mailru: (270px, 128px, -270px, -128px, 20px, 20px, 292px, 229px, 'sprite.png', 'mailru', );
+$marker-name: 'marker';
+$marker-x: 196px;
+$marker-y: 0px;
+$marker-offset-x: -196px;
+$marker-offset-y: 0px;
+$marker-width: 96px;
+$marker-height: 128px;
+$marker-total-width: 292px;
+$marker-total-height: 229px;
+$marker-image: 'sprite.png';
+$marker: (196px, 0px, -196px, 0px, 96px, 128px, 292px, 229px, 'sprite.png', 'marker', );
+$ok-hover-name: 'ok-hover';
+$ok-hover-x: 174px;
+$ok-hover-y: 171px;
+$ok-hover-offset-x: -174px;
+$ok-hover-offset-y: -171px;
+$ok-hover-width: 12px;
+$ok-hover-height: 22px;
+$ok-hover-total-width: 292px;
+$ok-hover-total-height: 229px;
+$ok-hover-image: 'sprite.png';
+$ok-hover: (174px, 171px, -174px, -171px, 12px, 22px, 292px, 229px, 'sprite.png', 'ok-hover', );
+$ok-name: 'ok';
+$ok-x: 186px;
+$ok-y: 171px;
+$ok-offset-x: -186px;
+$ok-offset-y: -171px;
+$ok-width: 12px;
+$ok-height: 20px;
+$ok-total-width: 292px;
+$ok-total-height: 229px;
+$ok-image: 'sprite.png';
+$ok: (186px, 171px, -186px, -171px, 12px, 20px, 292px, 229px, 'sprite.png', 'ok', );
+$price-bg-name: 'price-bg';
+$price-bg-x: 0px;
+$price-bg-y: 0px;
+$price-bg-offset-x: 0px;
+$price-bg-offset-y: 0px;
+$price-bg-width: 196px;
+$price-bg-height: 171px;
+$price-bg-total-width: 292px;
+$price-bg-total-height: 229px;
+$price-bg-image: 'sprite.png';
+$price-bg: (0px, 0px, 0px, 0px, 196px, 171px, 292px, 229px, 'sprite.png', 'price-bg', );
+$time-name: 'time';
+$time-x: 198px;
+$time-y: 171px;
+$time-offset-x: -198px;
+$time-offset-y: -171px;
+$time-width: 15px;
+$time-height: 15px;
+$time-total-width: 292px;
+$time-total-height: 229px;
+$time-image: 'sprite.png';
+$time: (198px, 171px, -198px, -171px, 15px, 15px, 292px, 229px, 'sprite.png', 'time', );
+$vegetarian-name: 'vegetarian';
+$vegetarian-x: 148px;
+$vegetarian-y: 171px;
+$vegetarian-offset-x: -148px;
+$vegetarian-offset-y: -171px;
+$vegetarian-width: 26px;
+$vegetarian-height: 23px;
+$vegetarian-total-width: 292px;
+$vegetarian-total-height: 229px;
+$vegetarian-image: 'sprite.png';
+$vegetarian: (148px, 171px, -148px, -171px, 26px, 23px, 292px, 229px, 'sprite.png', 'vegetarian', );
+$vk-hover-name: 'vk-hover';
+$vk-hover-x: 196px;
+$vk-hover-y: 150px;
+$vk-hover-offset-x: -196px;
+$vk-hover-offset-y: -150px;
+$vk-hover-width: 22px;
+$vk-hover-height: 13px;
+$vk-hover-total-width: 292px;
+$vk-hover-total-height: 229px;
+$vk-hover-image: 'sprite.png';
+$vk-hover: (196px, 150px, -196px, -150px, 22px, 13px, 292px, 229px, 'sprite.png', 'vk-hover', );
+$vk-name: 'vk';
+$vk-x: 218px;
+$vk-y: 150px;
+$vk-offset-x: -218px;
+$vk-offset-y: -150px;
+$vk-width: 22px;
+$vk-height: 13px;
+$vk-total-width: 292px;
+$vk-total-height: 229px;
+$vk-image: 'sprite.png';
+$vk: (218px, 150px, -218px, -150px, 22px, 13px, 292px, 229px, 'sprite.png', 'vk', );
+$spritesheet-width: 292px;
+$spritesheet-height: 229px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($breakfast, $city, $complex, $logo-grey, $loupe, $mailru-hover, $mailru, $marker, $ok-hover, $ok, $price-bg, $time, $vegetarian, $vk-hover, $vk, );
+$spritesheet: (292px, 229px, 'sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

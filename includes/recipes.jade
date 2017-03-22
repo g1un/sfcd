@@ -1,0 +1,37 @@
+mixin recipes()
+	.recipes
+		.container
+			a(href='#').recipes__link 340 рецептов
+			.recipes__title Наши рецепты
+			#recipes.columns.resipes__list.js-slider(data-slides='3')
+				-
+					list = [
+						{
+							"price": "160<sup>00</sup>",
+							"class": "vegetarian",
+							"type": "вегетарианский, простой",
+							"title": "Блинчики с клубникой"
+						},
+						{
+							"price": "190<sup>00</sup>",
+							"class": "complex",
+							"type": "сытный, сложный",
+							"title": "Говяжий стейк с песто и кукурузой"
+						},
+						{
+							"price": "230<sup>00</sup>",
+							"class": "breakfast",
+							"type": "завтрак, простой",
+							"title": "Вафли с медом"
+						}
+					]
+				each val, index in list
+					.columns__item-2.js-slider-item
+						a(href='#').recipes__item.recipe
+							.recipe__image
+								.recipe__bg(style='background-image: url(../img/recipe-#{index + 1}.jpg)')
+							.recipe__price!= val.price
+							.recipe__type(class='_#{val.class}')!= val.type
+							.recipe__title!= val.title
+							.recipe__time 0:40
+							.recipe__action Подобрать продукты

@@ -1,0 +1,4 @@
+mixin share()
+	.share(class=attributes.class)
+		each val in ["vk", "ok", "mailru"]
+			a.share__link(href='#', class='_#{val}')

@@ -1,0 +1,25 @@
+.recipes {
+	background: linear-gradient(to bottom, #fff, #f5f7fa);
+	padding-bottom: 50px;
+
+	&__title {
+		margin-bottom: 25px;
+		@include font-an-med();
+		font-size: 28px;
+		line-height: 1.2em;
+		color: #000;
+	}
+
+	&__link {
+		display: block;
+		float: right;
+		@include font-an-med();
+		font-size: 18px;
+		line-height: 1.2em;
+		color: $alizarin-crimson;
+	}
+
+	&__item {
+		margin-bottom: 10px;
+	}
+}

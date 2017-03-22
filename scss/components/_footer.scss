@@ -1,0 +1,16 @@
+.footer {
+	padding: 55px 0;
+	background: #434d54;
+
+	&__logo {
+		margin-bottom: 15px;
+		@include sprite($logo-grey);
+	}
+	
+	p {
+		@include font-pts-reg();
+		font-size: 16px;
+		line-height: 30px;
+		color: rgba(255,255,255,.4);
+	}
+}

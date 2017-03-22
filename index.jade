@@ -1,0 +1,23 @@
+doctype html
+html
+	head
+		title «SFCD»
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width")
+		link(rel='stylesheet', type='text/css', href='css/style.css')
+	body
+		include includes/header
+		include includes/products
+		include includes/recipes
+		include includes/trademarks
+		include includes/shops
+		include includes/loyalty
+		include includes/footer
+
+		+header()
+		+products()
+		+recipes()
+		+trademarks()
+		+shops()
+		+loyalty()
+		+footer()

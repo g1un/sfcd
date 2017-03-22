@@ -1,0 +1,61 @@
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+	font-weight: 400;
+}
+
+html,
+body {
+  font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 60px;
+	max-width: 1366px;
+	box-sizing: border-box;
+}
+
+.container-l {
+	padding: 0 11px 0 88px;
+
+	@media (max-width: 1023px) {
+		padding-left: 81px;
+	}
+
+	@media (max-width: 799px) {
+		padding: 0 14px;
+	}
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+//colors
+$vivid-tangerine: #fe9389;
+$cornflower-lilac: #ffb5ae;
+//$alizarin-crimson: #ec2d2d;
+$alizarin-crimson: #ec2e2e;
+$thunderbird: #cb1717;
+
+//$emerald: #52d05d;
+$chateau-green: #46b650;
+$jewel: #0e7b2f;
+
+$soft-amber: #d9cabb;
