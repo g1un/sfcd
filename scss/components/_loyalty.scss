@@ -19,7 +19,7 @@
 	}
 	
 	&__text {
-		margin-bottom: 45px;
+		margin-bottom: 52px;
 		max-width: 50%;
 		@include font-an-med();
 		font-size: 18px;
@@ -29,7 +29,7 @@
 
 	&__image {
 		position: absolute;
-		top: 0;
+		top: 31px;
 		right: 190px;
 		width: 337px;
 		height: 199px;
@@ -49,5 +49,9 @@
 				fill: #ee2a24;
 			}
 		}
+	}
+
+	&__link {
+		min-width: 258px;
 	}
 }

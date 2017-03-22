@@ -3,7 +3,7 @@
 	padding-bottom: 50px;
 
 	&__title {
-		margin-bottom: 25px;
+		margin-bottom: 33px;
 		@include font-an-med();
 		font-size: 28px;
 		line-height: 1.2em;
@@ -15,7 +15,7 @@
 		float: right;
 		@include font-an-med();
 		font-size: 18px;
-		line-height: 1.2em;
+		line-height: 34px;
 		color: $alizarin-crimson;
 	}
 

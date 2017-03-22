@@ -1,5 +1,5 @@
 .products {
-	margin-bottom: 45px;
+	margin-bottom: 73px;
 
 	&__main {
 		display: flex;
@@ -33,7 +33,7 @@
 		height: 60px;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: flex-end;
 	}
 
 	&__info {
@@ -44,6 +44,7 @@
 		width: 200px;
 		height: 200px;
 		border-radius: 50%;
+		box-sizing: border-box;
 		background: $chateau-green;
 
 		.discount {
@@ -56,6 +57,7 @@
 
 		&._full {
 			display: block;
+			padding-top: 45px;
 			position: relative;
 
 			&:before {
@@ -67,10 +69,12 @@
 			}
 
 			.price {
+				margin-bottom: 5px;
 				@include font-an-demi();
 				font-size: 54px;
 				line-height: 1em;
 				color: #fff;
+				text-align: center;
 				position: relative;
 
 				sup {
@@ -82,6 +86,8 @@
 			.old-price {
 				display: inline-block;
 				vertical-align: top;
+				margin-left: 28px;
+				margin-bottom: 12px;
 				@include font-an-demi();
 				font-size: 27px;
 				line-height: 1em;
@@ -97,7 +103,7 @@
 					right: 0;
 					height: 2px;
 					background: #fff;
-					transform: rotate(-5deg);
+					transform: rotate(-15deg);
 				}
 
 				sup {
@@ -107,10 +113,12 @@
 			}
 
 			.discount {
+				margin-right: 34px;
 				@include font-an-demi();
 				font-size: 27px;
 				line-height: 1em;
 				color: #fff;
+				text-align: right;
 				position: relative;
 			}
 		}

@@ -1,9 +1,9 @@
 .footer {
-	padding: 55px 0;
+	padding: 63px 0;
 	background: #434d54;
 
 	&__logo {
-		margin-bottom: 15px;
+		margin-bottom: 8px;
 		@include sprite($logo-grey);
 	}
 	
