@@ -1,0 +1,11 @@
+$md: 1365px;
+$sm: 1023px;
+$xs: 639px;
+
+@mixin max-width($i) {
+
+	@media (max-width: $i) {
+
+		@content;
+	}
+}

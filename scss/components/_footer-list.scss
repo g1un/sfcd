@@ -16,8 +16,20 @@
 		color: #fff;
 		white-space: nowrap;
 
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+
 		&:last-child {
 			margin-bottom: 0;
+		}
+	}
+
+	@include max-width($md) {
+
+		&__link {
+			white-space: normal;
 		}
 	}
 }

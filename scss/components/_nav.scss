@@ -17,4 +17,15 @@
 	&__link {
 		@extend %header-up-text;
 	}
+
+	@include max-width($md) {
+
+		&__list {
+			padding-left: 20px;
+		}
+
+		&__item {
+			margin-right: 25px;
+		}
+	}
 }

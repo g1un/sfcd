@@ -22,4 +22,12 @@
 	&__item {
 		margin-bottom: 10px;
 	}
+
+	@include max-width($md) {
+		padding-bottom: 20px;
+
+		&__title {
+			margin-bottom: 24px;
+		}
+	}
 }

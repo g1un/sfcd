@@ -13,4 +13,8 @@
 	&__link {
 		@extend %header-down-text;
 	}
+
+	@include max-width($md) {
+		padding-left: 67px;
+	}
 }

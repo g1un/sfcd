@@ -37,4 +37,11 @@
 		color: #fff;
 		text-align: center;
 	}
+
+	@include max-width($md) {
+
+		&__item {
+			height: 212px;
+		}
+	}
 }

@@ -27,17 +27,9 @@ a {
 	padding: 0 60px;
 	max-width: 1366px;
 	box-sizing: border-box;
-}
 
-.container-l {
-	padding: 0 11px 0 88px;
-
-	@media (max-width: 1023px) {
-		padding-left: 81px;
-	}
-
-	@media (max-width: 799px) {
-		padding: 0 14px;
+	@include max-width($md) {
+		padding: 0 30px;
 	}
 }
 

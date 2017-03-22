@@ -54,4 +54,15 @@
 	&__link {
 		min-width: 258px;
 	}
+
+	@include max-width($md) {
+
+		&__text {
+			max-width: 70%;
+		}
+
+		&__image {
+			right: 50px;
+		}
+	}
 }

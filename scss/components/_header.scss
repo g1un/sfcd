@@ -87,4 +87,15 @@
 	&__enter {
 		vertical-align: middle;
 	}
+
+	@include max-width($md) {
+
+		&__tel {
+			padding-left: 0;
+		}
+
+		&__buttons {
+			padding-left: 0;
+		}
+	}
 }

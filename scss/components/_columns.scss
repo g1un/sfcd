@@ -11,4 +11,19 @@
 			box-sizing: border-box;
 		}
 	}
+
+	@include max-width($md) {
+
+		margin: 0 -15px;
+
+		@for $i from 1 through 6 {
+
+			&__item-#{$i} {
+				float: left;
+				width: 1 / 6 * $i * 100%;
+				padding: 0 15px;
+				box-sizing: border-box;
+			}
+		}
+	}
 }
