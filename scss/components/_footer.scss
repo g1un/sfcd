@@ -8,9 +8,26 @@
 	}
 	
 	p {
-		@include font-pts-reg();
+		@include font-an-reg();
 		font-size: 16px;
 		line-height: 30px;
 		color: rgba(255,255,255,.4);
+	}
+
+	@include max-width($sm) {
+		padding: 0 0 50px;
+
+		&__address {
+			margin-top: 48px;
+		}
+
+		&__logo {
+			margin-bottom: 24px;
+			@include sprite($logo-grey-sm);
+		}
+
+		p {
+			font-size: 24px;
+		}
 	}
 }

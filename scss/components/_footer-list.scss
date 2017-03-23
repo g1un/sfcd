@@ -1,5 +1,5 @@
 .footer-list {
-	@include font-pts-reg();
+	@include font-an-reg();
 
 	&__title {
 		margin-bottom: 22px;
@@ -30,6 +30,37 @@
 
 		&__link {
 			white-space: normal;
+		}
+	}
+
+	@include max-width($sm) {
+
+		&__title {
+			margin-bottom: 0;
+			margin-right: -32px;
+			border-bottom: 1px solid #697176;
+			@include font-an-reg();
+			font-size: 32px;
+			line-height: 111px;
+			cursor: pointer;
+			position: relative;
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				margin-top: -13px;
+				right: 35px;
+				width: 15px;
+				height: 15px;
+				border-bottom: 2px solid #949494;
+				border-right: 2px solid #949494;
+				transform: rotate(45deg);
+			}
+		}
+
+		&__items {
+			display: none;
 		}
 	}
 }

@@ -79,4 +79,54 @@
 			}
 		}
 	}
+
+	@include max-width($sm) {
+
+		&__link {
+			width: 72px;
+			height: 72px;
+
+			&._vk {
+
+				&:after {
+					@include sprite($vk-sm);
+				}
+
+				&:hover {
+
+					&:after {
+						@include sprite($vk-sm-hover);
+					}
+				}
+			}
+
+			&._ok {
+
+				&:after {
+					@include sprite($ok-sm);
+				}
+
+				&:hover {
+
+					&:after {
+						@include sprite($ok-sm-hover);
+					}
+				}
+			}
+
+			&._mailru {
+
+				&:after {
+					@include sprite($mailru-sm);
+				}
+
+				&:hover {
+
+					&:after {
+						@include sprite($mailru-sm-hover);
+					}
+				}
+			}
+		}
+	}
 }

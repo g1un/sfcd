@@ -16,6 +16,7 @@ ul {
 html,
 body {
   font-size: 16px;
+	min-width: 640px;
 }
 
 a {
@@ -30,6 +31,10 @@ a {
 
 	@include max-width($md) {
 		padding: 0 30px;
+	}
+
+	@include max-width($sm) {
+		padding: 0 32px;
 	}
 }
 

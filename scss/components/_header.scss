@@ -98,4 +98,61 @@
 			padding-left: 0;
 		}
 	}
+
+	@include max-width($sm) {
+
+		&__up {
+			display: none;
+		}
+
+		&__down {
+			padding: 32px 0 107px;
+			text-align: right;
+			position: relative;
+
+			.columns {
+				display: block;
+				height: auto;
+			}
+		}
+
+		&__logo {
+			float: left;
+
+			svg {
+				width: 295px;
+				height: 64px;
+			}
+		}
+
+		&__menu {
+			position: absolute;
+			left: 32px;
+			right: 32px;
+			bottom: 41px;
+		}
+
+		&__buttons {
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 13px;
+			margin-right: 78px;
+		}
+
+		&__search {
+			margin-right: 0;
+			@include sprite($loupe-sm);
+		}
+
+		&__enter {
+			display: none;
+		}
+
+		&__sandwich {
+			margin-top: 16px;
+			display: block;
+			float: right;
+			@include sprite($sandwich);
+		}
+	}
 }

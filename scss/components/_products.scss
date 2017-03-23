@@ -1,6 +1,10 @@
 .products {
 	margin-bottom: 73px;
 
+	.container {
+		position: relative;
+	}
+
 	&__main {
 		display: flex;
 		flex-direction: column;
@@ -9,9 +13,33 @@
 		box-sizing: border-box;
 		padding-top: 55px;
 		padding-bottom: 55px;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
+		position: relative;
+	}
+
+	&__image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 500px;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		box-sizing: border-box;
+
+		&._chicken {
+			background-color: #ecdfd3;
+			padding-right: 220px;
+		}
+
+		&._japan {
+			background: linear-gradient(66deg, rgba(255,144,40,.24) 15%, rgba(204,130,90,0));
+		}
+
+		img {
+			max-height: 100%;
+			max-width: 100%;
+		}
 	}
 
 	&__date {
@@ -46,6 +74,8 @@
 		border-radius: 50%;
 		box-sizing: border-box;
 		background: $chateau-green;
+		position: relative;
+		z-index: 1;
 
 		.discount {
 			@include font-an-demi();
@@ -58,7 +88,6 @@
 		&._full {
 			display: block;
 			padding-top: 45px;
-			position: relative;
 
 			&:before {
 				content: '';
@@ -121,6 +150,56 @@
 				text-align: right;
 				position: relative;
 			}
+		}
+	}
+
+	@include max-width($sm) {
+		margin-bottom: 82px;
+
+		&__image {
+			height: 640px;
+			padding: 0;
+			justify-content: center;
+			align-items: flex-end;
+
+			&._chicken {
+				padding: 0 0 38px;
+			}
+
+			&._japan {
+
+				img {
+					margin-right: -372px;
+				}
+			}
+		}
+
+		&__main {
+			height: 640px;
+			padding-top: 43px;
+			display: block;
+		}
+
+		&__date {
+			margin-bottom: 18px;
+			font-size: 22px;
+		}
+
+		&__title {
+			margin-bottom: 27px;
+			font-size: 44px;
+
+			br {
+				display: none;
+			}
+		}
+
+		&__subtitle {
+			font-size: 22px;
+		}
+
+		&__footer {
+			height: 96px;
 		}
 	}
 }

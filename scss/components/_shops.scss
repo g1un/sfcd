@@ -6,8 +6,16 @@
 	background: #0f8433 url('../img/loyalty-bg.jpg') no-repeat center center;
 	background-size: cover;
 
+	.container {
+		width: 100%;
+		text-align: center;
+	}
+
 	&__title {
+		margin: 0 auto;
 		padding-left: 130px;
+		display: inline-block;
+		vertical-align: top;
 		@include font-an-med();
 		font-size: 123px;
 		line-height: 1em;

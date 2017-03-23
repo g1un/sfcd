@@ -30,4 +30,18 @@
 			margin-bottom: 24px;
 		}
 	}
+
+	@include max-width($sm) {
+		padding-bottom: 22px;
+
+		&__title {
+			font-size: 32px;
+			margin-bottom: 40px;
+		}
+
+		&__link {
+			font-size: 24px;
+			line-height: 38px;
+		}
+	}
 }

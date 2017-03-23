@@ -25,18 +25,21 @@ mixin products()
 			while i < 5
 				-var j = i % 2
 				product.products__item.js-slider-item
-					.container.products__main(style="background-image: url(img/product-#{j + 1}.jpg)")
-						.products__date!= list[j].date
-						.products__title!= list[j].title
-						.products__subtitle!= list[j].subtitle
-					.container.products__footer
-						+share().products__share
-						if list[j].full
-							.products__info._full
-								.price!= list[j].price
-								.old-price!= list[j].priceOld
-								.discount!= list[j].discount
-						else
-							.products__info
-								.discount!= list[j].discount
+					.container
+						.products__image(class='#{j == 0 ? "_chicken" : "_japan"}')
+							img(src='img/product-#{j + 1}.png', alt='product-#{j + 1}')
+						.products__main
+							.products__date!= list[j].date
+							.products__title!= list[j].title
+							.products__subtitle!= list[j].subtitle
+						.products__footer
+							+share().products__share
+							if list[j].full
+								.products__info._full
+									.price!= list[j].price
+									.old-price!= list[j].priceOld
+									.discount!= list[j].discount
+							else
+								.products__info
+									.discount!= list[j].discount
 				-i++

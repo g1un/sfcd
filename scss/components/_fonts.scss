@@ -1,8 +1,7 @@
 @font-face {
 	font-family: AvenirNextCyr-Medium;
-	src: url(../fonts/AvenirNextCyr-Medium.otf);
-			 //url(../fonts/FuturaPTMedium.woff2) format('woff2'),
-			 //url(../fonts/FuturaPTMedium.woff) format('woff');
+	src: url(../fonts/AvenirNextCyr-Medium.otf),
+			 url(../fonts/AvenirNextCyr-Medium.ttf);
 	font-weight: normal;
 }
 @mixin font-an-med() {
@@ -11,7 +10,8 @@
 
 @font-face {
 	font-family: AvenirNextCyr-Demi;
-	src: url(../fonts/AvenirNextCyr-Demi.otf);
+	src: url(../fonts/AvenirNextCyr-Demi.otf),
+			 url(../fonts/AvenirNextCyr-Demi.ttf);
 	font-weight: normal;
 }
 @mixin font-an-demi() {
@@ -20,7 +20,8 @@
 
 @font-face {
 	font-family: AvenirNextCyr-Bold;
-	src: url(../fonts/AvenirNextCyr-Bold.otf);
+	src: url(../fonts/AvenirNextCyr-Bold.otf),
+			 url(../fonts/AvenirNextCyr-Bold.ttf);
 	font-weight: normal;
 }
 @mixin font-an-bold() {
@@ -29,18 +30,10 @@
 
 @font-face {
 	font-family: AvenirNextCyr-Regular;
-	src: url(../fonts/AvenirNextCyr-Regular.otf);
+	src: url(../fonts/AvenirNextCyr-Regular.otf),
+			 url(../fonts/AvenirNextCyr-Regular.ttf);
 	font-weight: normal;
 }
 @mixin font-an-reg() {
 	font-family: AvenirNextCyr-Regular, sans-serif;
-}
-
-@font-face {
-	font-family: PT_Sans-Web-Regular;
-	src: url(../fonts/PT_Sans-Web-Regular.ttf);
-	font-weight: normal;
-}
-@mixin font-pts-reg() {
-	font-family: PT_Sans-Web-Regular, sans-serif;
 }

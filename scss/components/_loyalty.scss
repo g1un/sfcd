@@ -65,4 +65,43 @@
 			right: 50px;
 		}
 	}
+
+	@include max-width($sm) {
+		padding-top: 54px;
+		padding-bottom: 64px;
+
+		&__title {
+			margin-bottom: 26px;
+			max-width: 100%;
+			font-size: 44px;
+		}
+
+		&__text {
+			margin-bottom: 22px;
+			max-width: 100%;
+			font-size: 28px;
+
+			br {
+				display: none;
+			}
+		}
+
+		&__image {
+			margin-bottom: 32px;
+			position: static;
+			width: auto;
+			height: 320px;
+			padding: 28px 21px;
+			border-radius: 31px;
+
+			svg {
+				width: 339px;
+				height: 73px;
+			}
+		}
+
+		&__link {
+
+		}
+	}
 }

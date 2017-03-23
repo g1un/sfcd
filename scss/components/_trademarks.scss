@@ -44,4 +44,11 @@
 			height: 212px;
 		}
 	}
+
+	@include max-width($sm) {
+
+		&__item {
+			height: 305px;
+		}
+	}
 }
