@@ -29,7 +29,7 @@ mixin recipes()
 					.columns__item-2.js-slider-item
 						a(href='#').recipes__item.recipe
 							.recipe__image
-								.recipe__bg(style='background-image: url(../img/recipe-#{index + 1}.jpg)')
+								.recipe__bg(style='background-image: url(img/recipe-#{index + 1}.jpg)')
 							.recipe__price!= val.price
 							.recipe__type(class='_#{val.class}')!= val.type
 							.recipe__title!= val.title
