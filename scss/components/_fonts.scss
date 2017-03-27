@@ -1,39 +1,47 @@
 @font-face {
-	font-family: AvenirNextCyr-Medium;
-	src: url(../fonts/AvenirNextCyr-Medium.otf),
-			 url(../fonts/AvenirNextCyr-Medium.ttf);
-	font-weight: normal;
+	font-family: AvenirNext-Medium;
+	src: url(../fonts/AvenirNext-Medium.eot);
+	src: url(../fonts/AvenirNext-Medium.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/AvenirNext-Medium.woff2) format('woff2'),
+	url(../fonts/AvenirNext-Medium.woff) format('woff'),
+	url(../fonts/AvenirNext-Medium.ttf)  format('truetype');
 }
 @mixin font-an-med() {
-	font-family: AvenirNextCyr-Medium, sans-serif;
+	font-family: AvenirNext-Medium, sans-serif;
 }
 
 @font-face {
-	font-family: AvenirNextCyr-Demi;
-	src: url(../fonts/AvenirNextCyr-Demi.otf),
-			 url(../fonts/AvenirNextCyr-Demi.ttf);
-	font-weight: normal;
+	font-family: AvenirNext-DemiBold;
+	src: url(../fonts/AvenirNext-DemiBold.eot);
+	src: url(../fonts/AvenirNext-DemiBold.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/AvenirNext-DemiBold.woff2) format('woff2'),
+	url(../fonts/AvenirNext-DemiBold.woff) format('woff'),
+	url(../fonts/AvenirNext-DemiBold.ttf)  format('truetype');
 }
 @mixin font-an-demi() {
-	font-family: AvenirNextCyr-Demi, sans-serif;
+	font-family: AvenirNext-DemiBold, sans-serif;
 }
 
 @font-face {
-	font-family: AvenirNextCyr-Bold;
-	src: url(../fonts/AvenirNextCyr-Bold.otf),
-			 url(../fonts/AvenirNextCyr-Bold.ttf);
-	font-weight: normal;
+	font-family: AvenirNext-Bold;
+	src: url(../fonts/AvenirNext-Bold.eot);
+	src: url(../fonts/AvenirNext-Bold.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/AvenirNext-Bold.woff2) format('woff2'),
+	url(../fonts/AvenirNext-Bold.woff) format('woff'),
+	url(../fonts/AvenirNext-Bold.ttf)  format('truetype');
 }
 @mixin font-an-bold() {
-	font-family: AvenirNextCyr-Bold, sans-serif;
+	font-family: AvenirNext-Bold, sans-serif;
 }
 
 @font-face {
-	font-family: AvenirNextCyr-Regular;
-	src: url(../fonts/AvenirNextCyr-Regular.otf),
-			 url(../fonts/AvenirNextCyr-Regular.ttf);
-	font-weight: normal;
+	font-family: AvenirNext-Regular;
+	src: url(../fonts/AvenirNext-Regular.eot);
+	src: url(../fonts/AvenirNext-Regular.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/AvenirNext-Regular.woff2) format('woff2'),
+	url(../fonts/AvenirNext-Regular.woff) format('woff'),
+	url(../fonts/AvenirNext-Regular.ttf)  format('truetype');
 }
 @mixin font-an-reg() {
-	font-family: AvenirNextCyr-Regular, sans-serif;
+	font-family: AvenirNext-Regular, sans-serif;
 }
